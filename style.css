@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+body > div {
+    width: 35vw;
+    height: min-content;
+}
+
+body > div > img {
+    width: 100%;
+}
+
+div.titlebar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.share {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 1rem;
+}
+
+.profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100000000000000000000000000000px;
+}
+
+.info .reactions {
+    display: flex;
+}
