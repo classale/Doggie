@@ -1,6 +1,11 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 1.75vmin;
 }
 
 body {
@@ -9,36 +14,103 @@ body {
     align-items: center;
     width: 100vw;
     height: 100vh;
+    background-color: #FFB763;
 }
 
-body > div {
-    width: 35vw;
+body > main {
+    background-color: white;
+    border-radius: 2vmin;
+    width: 75vmin;
     height: min-content;
+    overflow: hidden;
 }
 
-body > div > img {
+body > main > .imgcont {
     width: 100%;
+    display: flex;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+body > main > .imgcont > img {
+    width: 100%;
+    box-sizing: border-box;
+    transform: scale(1.75) translateY(5vmin);
 }
 
 div.titlebar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-weight: bold;
 }
 
 div.share {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 1rem;
+    height: min-content;
+}
+
+div.share img {
+    width: 1vmin;
 }
 
 .profile img {
-    width: 50px;
-    height: 50px;
+    width: 5vmin;
+    height: 5vmin;
     border-radius: 100000000000000000000000000000px;
+    object-fit: cover;
+    margin-right: 1.3vmin;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
 }
 
 .info .reactions {
     display: flex;
+    flex-direction: column;
+}
+
+.info .reactions .icons {
+    display: flex;
+    justify-content: space-between;
+    height: min-content;
+    margin-bottom: 2vmin;
+    user-select: none;
+}
+
+main > *:not(main > img) {
+    padding: 0 5vmin 0 5vmin;
+}
+
+main > *:first-child, main > *:last-child {
+    padding: 2.5vmin;
+}
+
+.share {
+    background-color: #1FA1FF;
+    color: white;
+    padding: 1.5vmin 2vmin 1.5vmin 2vmin;
+}
+
+.menu {
+    letter-spacing: 1vmin;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.icons img {
+    width: 2vmin;
+}
+
+.icons > div:first-child > img:not(.icons > div:first-child > img:last-child) {
+    margin-right: 1vmin;
+}
+
+.likes {
+    margin-bottom: 1.3vmin;
 }
